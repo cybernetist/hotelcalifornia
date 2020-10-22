@@ -1,0 +1,47 @@
+<footer class="footer text-center">
+    <p>Death Valley National Park - Harrisburg - California</p>
+
+    <div class="social-icons">
+        <img class="img-fluid" src="../img/colored.png">
+    </div>
+</footer>
+
+<script src="js/all.js"></script>
+
+<script type="text/javascript">
+
+$(window).scroll(function(){
+    var scroll = $(window).scrollTop();
+    if(scroll < 100){
+        $('.fixed-top').css('background', 'transparent');
+    } else{
+        $('.fixed-top').css('background', 'rgba(36, 156, 155, 1)');
+    }
+});
+
+</script>
+
+<script type="text/javascript">
+function loadFunction() {
+    // body...
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth()+1; //January is 0!
+    var yyyy = today.getFullYear();
+
+    if(dd<10){
+        dd='0'+dd;
+    } 
+    if(mm<10){
+        mm='0'+mm;
+    } 
+
+    today = yyyy+'-'+mm+'-'+dd;                
+    document.getElementById("idFdate").defaultValue =today+"";
+}
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+
+</body>
+</html>
