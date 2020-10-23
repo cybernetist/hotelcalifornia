@@ -58,8 +58,10 @@ body {
   }
 }
 
+
+
 .about {
-  height: 744px;
+  height: 739px;
   background-color: #daf3ff;
   overflow: hidden;
 
@@ -511,6 +513,20 @@ footer {
   margin-left: 80px;
   margin-right: 80px;
 }
+
+.social-icons{
+  @include flex-centered();
+  ul{
+    display: flex;
+    list-style: none;
+    li{
+      margin: 5px;
+      img{
+        width: 45px;
+      }
+    }
+  }
+}
 //Responsive Css
 
 // Mobile
@@ -521,6 +537,7 @@ footer {
       margin-right: auto;
     }
   }
+  
   #contact-form {
     margin-left: auto;
     margin-right: auto;
