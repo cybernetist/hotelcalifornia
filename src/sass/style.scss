@@ -314,6 +314,8 @@ section.act {
   .list {
     .card {
       max-width: 250px;
+      position: relative;
+      margin: auto;
       .card-body {
         .card-title {
           font-family: Roboto;
@@ -511,6 +513,7 @@ footer {
 }
 //Responsive Css
 
+// Mobile
 @media screen and (max-width: 500px) {
   .testimonial {
     .test-content {
@@ -582,8 +585,24 @@ footer {
   #contact-form {
     margin-left: 20px;
   }
+  .progress-content {
+    .progress-title {
+      h4 {
+        font-size: 17px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+    .green {
+      margin-top: 30px;
+    }
+    .yellow {
+      margin-top: 30px;
+    }
+  }
 }
-
+// Tablet
 @media (min-width: 768px) and (max-width: 1024px) {
   .testimonial {
     .test-content {
@@ -652,7 +671,26 @@ footer {
     }
   }
 
+  .contact {
+    .form-group {
+      input {
+        width: 230px;
+        height: 48px;
+        border-radius: unset;
+      }
+    }
+  }
+
   #contact-form {
     margin-left: 20px;
+    margin-right: 20px;
+  }
+  .progress-content {
+    .green {
+      margin-top: 30px;
+    }
+    .yellow {
+      margin-top: 30px;
+    }
   }
 }

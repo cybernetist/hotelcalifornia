@@ -2,12 +2,18 @@
     <p>Death Valley National Park - Harrisburg - California</p>
 
     <div class="social-icons">
-        <img class="img-fluid" src="../img/colored.png">
+        <ul>
+            <a href="#"><li></li></a>
+            <a href="#"><li></li></a>
+            <a href="#"><li></li></a>
+            <a href="#"><li></li></a>
+            <a href="#"><li></li></a>
+        </ul>
     </div>
 </footer>
 
 <script src="js/all.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script type="text/javascript">
 
 $(window).scroll(function(){
@@ -22,26 +28,24 @@ $(window).scroll(function(){
 </script>
 
 <script type="text/javascript">
-function loadFunction() {
-    // body...
-    var today = new Date();
-    var dd = today.getDate();
-    var mm = today.getMonth()+1; //January is 0!
-    var yyyy = today.getFullYear();
-
-    if(dd<10){
-        dd='0'+dd;
-    } 
-    if(mm<10){
-        mm='0'+mm;
-    } 
-
-    today = yyyy+'-'+mm+'-'+dd;                
-    document.getElementById("idFdate").defaultValue =today+"";
-}
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:4
+        }
+    }
+})
 </script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
 
 </body>
 </html>
